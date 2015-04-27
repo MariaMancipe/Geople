@@ -5,10 +5,29 @@
  */
 package services.DTOS;
 
+import java.util.List;
+
 /**
  *
  * @author estudiante
  */
 public class UsuarioDTO {
+    
+    public int edad;
+    
+    public int sexo;
+    
+    public List<String> tiposLugar;
+    
+    public List<String> intereses;
+    
+    public List<String> redesSociales;
+    
+
+    public UsuarioDTO() {
+    }
+    
+    
+    
     
 }

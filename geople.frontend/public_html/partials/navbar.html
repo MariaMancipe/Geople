@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<div class="panel panel-default ">
+    <ul class="nav nav-pills nav-stacked">
+        <li role="presentation" class="active" ng-class="{active:navbar.isSelected(0)}">
+            <a href="#" ng-click="navbar.selectTab(0)">
+                <h4><span class="glyphicon glyphicon-home"></span>Inicio</h4>
+            </a>
+        </li>
+        <li role="presentation" ng-class="{active:navbar.isSelected(1)}">
+            <a href="#" ng-click="navbar.selectTab(1)">
+                <h4><span class="glyphicon glyphicon-user"></span>An&aacute;lisis Demogr&aacute;fico</h4>
+            </a>
+            <!--Opciones de los pacientes-->
+            <ul class="nav nav-pills nav-stacked" ng-show="navbar.isSelected(1) || navbar.isSelected(11) || navbar.isSelected(12) || navbar.isSelected(13)|| navbar.isSelected(14)" >
+                <li role="presentation" ng-class="{active:navbar.isSelected(11)}">
+                    <a href="#" ng-click="navbar.selectTab(11)" >
+                        <h5>Crear perfil de busqueda</h5>
+                    </a>
+                </li>
+                
+                <li role="presentation" ng-class="{active:navbar.isSelected(12)}">
+                    <a href="#" ng-click="navbar.selectTab(12)">
+                        <h5>Realiza un an&aacute; con el perfil definido actualemente</h5>
+                    </a>
+                </li>
+                <li role="presentation" ng-class="{active:navbar.isSelected(13)}">
+                    <a href="#" ng-click="navbar.selectTab(13)">
+                        <h5>Realiza un an&aacute;lisis con un perfil anteriormente registrado</h5>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li role="presentation" ng-class="{active:navbar.isSelected(2)}">
+            <a href="#" ng-click="navbar.selectTab(2)">
+                <h4><span class="glyphicon glyphicon-th-list"></span> Análisis Contextual</h4>
+            </a>
+            <!--Opciones de los episodios-->
+            <ul class="nav nav-pills nav-stacked" ng-show="navbar.isSelected(2)|| navbar.isSelected(21) || navbar.isSelected(22) || navbar.isSelected(23)" >
+                <li role="presentation" ng-class="{active:navbar.isSelected(21)}">
+                    <a href="#" ng-click="navbar.selectTab(21)" >
+                        <h5>Crear perfil de busqueda</h5>
+                    </a>
+                </li>
+                
+                <li role="presentation" ng-class="{active:navbar.isSelected(22)}">
+                    <a href="#" ng-click="navbar.selectTab(22)">
+                        <h5>Realiza un an&aacute; con el perfil definido actualemente</h5>
+                    </a>
+                </li>
+                <li role="presentation" ng-class="{active:navbar.isSelected(23)}">
+                    <a href="#" ng-click="navbar.selectTab(23)">
+                        <h5>Realiza un an&aacute;lisis con un perfil anteriormente registrado</h5>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li role="presentation" ng-class="{active:navbar.isSelected(3)}">
+            <a href="#" ng-click="navbar.selectTab(3)">
+                <h4><span class="glyphicon glyphicon-user"></span>Informes</h4>
+            </a>
+        </li>   
+        <!--Opciones de los informes-->
+            <ul class="nav nav-pills nav-stacked" ng-show="navbar.isSelected(3)|| navbar.isSelected(31) || navbar.isSelected(32)" >
+                <li role="presentation" ng-class="{active:navbar.isSelected(31)}">
+                    <a href="#" ng-click="navbar.selectTab(31)" >
+                        <h5>Ver todos los informes</h5>
+                    </a>
+                </li>
+                <li role="presentation" ng-class="{active:navbar.isSelected(32)}">
+                    <a href="#" ng-click="navbar.selectTab(32)">
+                        <h5>Buscar informe por id</h5>
+                    </a>
+                </li>
+            </ul>
+        <li role="presentation" ng-class="{active:navbar.isSelected(4)}">
+            <a href="#" ng-click="navbar.selectTab(4)">
+                <h4><span class="glyphicon glyphicon-user"></span>Perfiles</h4>
+            </a>
+        </li> 
+        <ul class="nav nav-pills nav-stacked" ng-show="navbar.isSelected(4)|| navbar.isSelected(41) || navbar.isSelected(42)| navbar.isSelected(43)| navbar.isSelected(44)" >
+                <li role="presentation" ng-class="{active:navbar.isSelected(41)}">
+                    <a href="#" ng-click="navbar.selectTab(41)" >
+                        <h5>Ver todos los perfiles</h5>
+                    </a>
+                </li>
+                <li role="presentation" ng-class="{active:navbar.isSelected(42)}">
+                    <a href="#" ng-click="navbar.selectTab(42)">
+                        <h5>Ver perfiles contextuales</h5>
+                    </a>
+                </li>
+                <li role="presentation" ng-class="{active:navbar.isSelected(43)}">
+                    <a href="#" ng-click="navbar.selectTab(43)">
+                        <h5>Ver perfiles demogr&aacute;ficos</h5>
+                    </a>
+                </li>
+                <li role="presentation" ng-class="{active:navbar.isSelected(44)}">
+                    <a href="#" ng-click="navbar.selectTab(44)">
+                        <h5>Buscar un perfil </h5>
+                    </a>
+                </li>
+            </ul>
+    </ul>
+</div>

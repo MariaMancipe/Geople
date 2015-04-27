@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="geople">
+    <head>
+        <title>Geople</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/app.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/AngularControllers/app.js"></script>
+        <script type="text/javascript" src="js/AngularControllers/contextual.js"></script>
+        <script type="text/javascript" src="js/AngularControllers/demografico.js"></script>
+        <div class="container theme-showcase" role="main">
+            <div>
+                <div class="fixed">
+                    <h1>Geople</h1>
+                    <navbar></navbar>
+                </div>
+                <div class="flex-item">
+                    <div ng-if="navbar.isSelected(0)">
+                        <div class="row featurette">
+                            <div class="col-md-5">
+                                <!--img src="images/cerebro.jpg" class="img-responsive" alt="500x500" data-holder-rendered="true"-->
+                            </div>
+                            <div class="col-md-7">
+                                <h2>Geople</h2>
+                                <p class="lead">
+                                Bievenido a Geople! Aqui podras analizar las personas y los establecimientos que se encuentran en el lugar donde tu deseas abrir tu nuevo punto de venta.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-if="navbar.isSelected(1)">
+                        <div class="row featurette">
+                            <div class="col-md-5">
+                                <img src="images/pacientes.jpg" class="img-responsive" alt="500x500" data-holder-rendered="true">
+                            </div>
+                            <div class="col-md-7">
+                                <h2>An&aacute;lisis Demografico</h2>
+                                <p class="lead">
+                                    Aqui podras hacer un an&aacute;lisis detallado de las personas que se encuentran en un area de la ciudad.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-if="navbar.isSelected(11)">
+                        <perfild-form></perfild-form>
+                    </div>
+                    <div ng-show="navbar.isSelected(12)">
+                        <analisisd-actual></analisisd-actual>
+                    </div>
+                    <div ng-show="navbar.isSelected(13)">
+                        <analisisd-registrado></analisisd-registrado>
+                    </div>
+                    <div ng-show="navbar.isSelected(2)">
+                        <div class="row featurette">
+                            <div class="col-md-5">
+                                <img src="images/episodio.jpg" class="img-responsive" alt="500x500" data-holder-rendered="true">
+                            </div>
+                            <div class="col-md-7">
+                                <h2>Análisis Contextual</h2>
+                                <p class="lead">
+                                Aqui podras analizar los establecimientos que se encuentran en un area de la ciudad.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-show="navbar.isSelected(21)">
+                        <perfilc-form></perfilc-form>
+                    </div>
+                    <div ng-show="navbar.isSelected(22)">
+                        <analisisc-actual></analisisc-actual>
+                    </div>
+                    <div ng-show="navbar.isSelected(23)">
+                        <analisisc-registrado></analisisc-registrado>
+                    </div>
+                    
+                    <div ng-show="navbar.isSelected(3)">
+                        <div class="row featurette">
+                            <div class="col-md-5">
+                                <img src="images/doctor.jpg" class="img-responsive" alt="500x500" data-holder-rendered="true">
+                            </div>
+                            <div class="col-md-7">
+                                <h2>Informes</h2>
+                                <p class="lead">
+                                    Aqui podras encontrar los informes de los analisis realizados.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-show="navbar.isSelected(31)">
+                        <informe-todos></informe-todos>
+                    </div>
+                    <div ng-show="navbar.isSelected(32)">
+                        <informe-busqueda></informe-busqueda>
+                    </div>
+                </div>
+                
+                <div ng-show="navbar.isSelected(4)">
+                        <div class="row featurette">
+                            <div class="col-md-5">
+                                <img src="images/doctor.jpg" class="img-responsive" alt="500x500" data-holder-rendered="true">
+                            </div>
+                            <div class="col-md-7">
+                                <h2>Perfiles</h2>
+                                <p class="lead">
+                                    Aqui podras encontrar los perfiles registrados para los analisis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-show="navbar.isSelected(41)">
+                        <perfil-todos></perfil-todos>
+                    </div>
+                    <div ng-show="navbar.isSelected(42)">
+                        <perfil-contextual></perfil-contextual>
+                    </div>
+                    <div ng-show="navbar.isSelected(43)">
+                        <perfil-demografico></perfil-demografico>
+                    </div>
+                    <div ng-show="navbar.isSelected(44)">
+                        <perfil-busqueda></perfil-busqueda>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>

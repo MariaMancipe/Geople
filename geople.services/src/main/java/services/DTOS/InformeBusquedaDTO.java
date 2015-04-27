@@ -9,6 +9,32 @@ package services.DTOS;
  *
  * @author estudiante
  */
-public class InformeBusquedaDTO {
+public class InformeBusquedaDTO
+{
+    //-----------------------------------------------------
+    //Atributos
+    //-----------------------------------------------------
+    
+    public int cantidadTransito;
+    
+    public int cantidadTotal;
+    
+    public int cantidad100;
+    
+    public int cantidad75;
+    
+    public int cantidad50;
+    
+    //-----------------------------------------------------
+    //Constructor
+    //-----------------------------------------------------
+
+    public InformeBusquedaDTO() {
+    }
+    
+    //-----------------------------------------------------
+    //Métodos
+    //-----------------------------------------------------
+    
     
 }
